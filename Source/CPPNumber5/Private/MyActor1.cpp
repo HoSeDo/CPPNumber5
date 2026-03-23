@@ -16,6 +16,9 @@ void AMyActor1::BeginPlay()
 {
     Super::BeginPlay();
 
+    // 시작 위치 고정
+    SetActorLocation(FVector(0.f, 50.f, 0.f));
+
     GetWorldTimerManager().SetTimer(
         MoveTimerHandle,
         this,
